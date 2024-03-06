@@ -20,6 +20,24 @@ features:
         - title: "Customizable AI features"
           icon: "images/robot-icon.svg"
           content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+
+reviews:
+    enabled: true
+    title: "The stunning results our customers have experienced"
+    review:
+        - name: "Ron Wood"
+          image: "/images/customer-1.jpg"
+          title: "CEO"
+          content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua"
+        - name: "Mark Mason"
+          image: "/images/customer-2.jpg"
+          title: "Marketing Manager"
+          content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua"
+        - name: "Sam Preston"
+          image: "/images/customer-3.jpg"
+          title: "CTO"
+          content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua"
+
 ---
 
 Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat
