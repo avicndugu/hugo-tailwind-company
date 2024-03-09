@@ -1,0 +1,178 @@
+{{ define "main" }}
+
+{{ with .Params.hero }}
+{{ if .enabled }}
+<!-- Hero Section -->
+<section class="bg-contact-us-gradient bg-left bg-no-repeat px-5 2xl:px-0">
+    <div class=" max-w-screen-xl mx-auto">
+        <div class="max-w-4xl mx-auto pt-24 pb-12 text-center">
+            <h1 class="text-5xl lg:text-6xl font-bold">
+                {{ .title }}
+            </h1>
+            <p class="my-10 text-lg">
+                {{ .content }}
+            </p>
+        </div>
+        {{ with .featured }}
+        <div class="container mx-auto lg:flex lg:justify-center gap-12 p-8 lg:p-16 border-[#D8D8D8] border rounded-3xl">
+            <div>
+                <p class="text-2xl pb-6 font-bold bg-gradient-to-r from-custom-blue-dark from-15% to-custom-blue-light to-83% bg-clip-text text-transparent w-fit">
+                    {{ .label }}
+                </p>
+                <h2 class="text-4xl lg:text-5xl font-bold pb-6">
+                    {{ .title }}
+                </h2>
+                <p class="text-base pb-8">
+                    {{ .content }}
+                </p>
+                <p class="text-base">
+                    {{ .author }} |  {{ .date }}
+                </p>
+            </div>
+            <div class="bg-[url('{{ .image }}')] bg-cover bg-no-repeat bg-center w-full h-64 lg:h-80 rounded-xl mt-8">
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ with .Params.posts }}
+{{ if .enabled }}
+    <section>
+        <div class="container mx-auto max-w-screen-xl pt-32 px-5 2xl:px-0">
+            <div class="text-center pb-12">
+                <h2 class="text-4xl lg:text-5xl font-bold pb-4">
+                    {{ .title }}
+                </h2>
+                <p class="text-lg">
+                    {{ .content }}
+                </p>
+            </div>
+            <!-- Row -->
+            <div class="grid grid-cols-3 gap-6">
+            <!-- <div class="lg:flex gap-6"> -->
+
+                {{ $blog := site.GetPage "blog" }}
+                {{ range $blog.RegularPages }}
+                <div class="mb-16">
+                    <div class="bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8" style="background-image: url('{{- if .Params.image -}}{{- .Params.image -}}{{- else -}}{{- .Site.Params.default_hero_image.image -}}{{- end -}}');">
+                    </div>
+                    <div>
+                        <a href="{{ .Permalink }}" class="text-2xl font-bold mb-4">
+                            {{ .Title }}
+                        </a>
+                        <p class="mb-4">
+                            {{ if gt (len .Summary) 90 }}
+                              {{slicestr .Summary 0 90}}
+                            {{ end }}
+                        </p>
+                        <p>
+                            {{ if .Params.Author }}{{ .Params.Author }} {{ else }} {{ .Site.Author.name }} {{ end }} |  {{ if .Params.Date }}{{ .Params.Date | time.Format ":date_medium" }}{{ end }}
+                        </p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <!-- End Row -->
+            <!-- Row -->
+            <!-- <div class="grid grid-cols-3 gap-4">
+                <div class="mb-16">
+                    <div class="bg-[url('images/team-photo-3.png')] bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8"></div>
+                    <div>
+                        <a href="/blog-post" class="text-2xl font-bold mb-4">
+                             How to Calculate Your SaaS Gross Margin
+                        </a>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                        <p>
+                            Luke Matthews l  November 8, 2021
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-16">
+                    <div class="bg-[url('/images/team-photo-3.png')] bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8"></div>
+                    <div>
+                        <a href="/blog-post" class="text-2xl font-bold mb-4">
+                            The Five Main Benefits of Automating your Accounts Receivable Process
+                        </a>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                        <p>
+                            Luke Matthews l  November 8, 2021
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-16">
+                    <div class="bg-[url('/images/team-photo-3.png')] bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8"></div>
+                    <div>
+                        <a href="/blog-post" class="text-2xl font-bold mb-4">
+                            How to Make Data-driven Pricing Decisions
+                        </a>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                        <p>
+                            Luke Matthews l  November 8, 2021
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Row -->
+            <!-- Row -->
+            <!-- <div class="lg:flex gap-6">
+                <div class="flex-1 mb-16">
+                    <div class="bg-[url('images/team-photo-3.png')] bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8"></div>
+                    <div>
+                        <a href="/blog-post" class="text-2xl font-bold mb-4">
+                            How to Make Recurring Invoicing More Efficient
+                        </a>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                        <p>
+                            Luke Matthews l  November 8, 2021
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="bg-[url('images/team-photo-3.png')] bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8"></div>
+                    <div>
+                        <a href="/blog-post" class="text-2xl font-bold mb-4">
+                            How to Reduce Checkout Abandonment for more Conversions
+                        </a>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                        <p>
+                            Luke Matthews l  November 8, 2021
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="bg-[url('images/team-photo-3.png')] bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8">
+                    </div>
+                    <div>
+                        <a href="/blog-post" class="text-2xl font-bold mb-4">
+                            10 Customer Retention Strategies for better Dwell time
+                        </a>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                        <p>
+                            Luke Matthews l  November 8, 2021
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Row -->
+
+        </div>
+    </section>
+{{ end }}
+{{ end }}
+
+{{ end }}
