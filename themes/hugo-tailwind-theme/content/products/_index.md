@@ -67,22 +67,6 @@ offers:
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore. At dolore magna aliquyam erat, sed diam voluptua invid unt ut labore."
       image: "/images/track-your-performance.png"
 
-marketing:
-  enabled: true
-  title: ""
-
-time_tracking:
-  enabled: true
-  title: ""
-
-lead_generation:
-  enabled: true
-  title: ""
-
-remote_teams:
-  enabled: true
-  title: ""
-
 features:
   enabled: true
   title: "Features"
