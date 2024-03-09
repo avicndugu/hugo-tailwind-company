@@ -700,6 +700,10 @@ video {
   height: 18rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
@@ -710,10 +714,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .w-8 {
@@ -1032,6 +1032,13 @@ video {
   background-image: url('images/team-photo-3.png');
 }
 
+.bg-blogpost-gradient-1-2 {
+  background-image: 
+                url('/images/blog-post-gradient-1.svg'),
+                url('/images/blog-post-gradient-2.svg')
+            ;
+}
+
 .bg-contact-us-gradient {
   background-image: url('/images/contact-us-gradient.svg');
 }
@@ -1078,17 +1085,6 @@ video {
   background-image: url('/images/product-hero-gradient.svg');
 }
 
-.bg-blogpost-gradient-1-2 {
-  background-image: 
-                url('/images/blog-post-gradient-1.svg'),
-                url('/images/blog-post-gradient-2.svg')
-            ;
-}
-
-.bg-\[url\(\'\/team-photo-3\.png\'\)\] {
-  background-image: url('/team-photo-3.png');
-}
-
 .from-custom-blue-dark {
   --tw-gradient-from: #373FFF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(55 63 255 / 0) var(--tw-gradient-to-position);
@@ -1120,6 +1116,10 @@ video {
           background-clip: text;
 }
 
+.bg-blogpost-gradient-1-2 {
+  background-position: left top, right top;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -1138,10 +1138,6 @@ video {
 
 .bg-top {
   background-position: top;
-}
-
-.bg-blogpost-gradient-1-2 {
-  background-position: left top, right top;
 }
 
 .bg-no-repeat {
