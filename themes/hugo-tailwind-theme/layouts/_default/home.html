@@ -213,24 +213,4 @@
 {{ end }}
 {{ end }}
 
-{{ with .Params.promotion }}
-{{ if .enabled }}
-<section class="bg-cta-gradient">
-    <div class="container px-5 2xl:px-0 py-20 lg:py-32 text-lg text-center max-w-2xl">
-        <h2 class="text-4xl lg:text-5xl font-bold pb-6">
-            {{ .title }}
-        </h2>
-        <p class="pb-8">
-            {{ .content }}
-        </p>
-        {{ with .button }}
-        <a href="{{ .link }}" class="bg-custom-dark text-white px-10 py-4 rounded-2xl">
-            {{ .text }}
-        </a>
-        {{ end }}
-    </div>
-</section>
-{{ end }}
-{{ end }}
-
 {{ end }}

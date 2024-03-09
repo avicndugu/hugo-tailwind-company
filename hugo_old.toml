@@ -17,8 +17,6 @@ name = "Default Author"
   [params.related_posts]
     title = 'Read more posts'
 
-sectionPagesMenu = 'main'
-
 [menus]
   [[menus.main]]
     name = 'Home'
@@ -44,3 +42,27 @@ sectionPagesMenu = 'main'
     name = 'Contact'
     url = '/contact/'
     weight = 60
+
+[footer]
+  [[ footer.company ]]
+    name = ''
+    url = ''
+  [[ footer.company ]]
+    name = ''
+    url = ''
+  [[ footer.company ]]
+    name = ''
+    url = ''
+  [[ footer.company ]]
+    name = ''
+    url = ''
+  [[ footer.company ]]
+    name = ''
+    url = ''
+  [[ footer.company ]]
+    name = ''
+    url = ''
+  [[ footer.company ]]
+    name = ''
+    url = ''
+

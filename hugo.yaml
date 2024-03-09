@@ -1,0 +1,77 @@
+baseURL: "https://example.org/"
+languageCode: "en-us"
+title: "finsweet"
+
+theme: "hugo-tailwind-theme"
+
+author:
+  name: "Default Author"
+
+params:
+  logo:
+    image: "/images/logo-dark.svg"
+    alt: "Finsweet"
+  default_hero_image:
+    image: "/images/team-photo-3.png"
+  related_posts:
+    title: "Read more posts"
+  footer:
+    company:
+      title: "Company"
+      list:
+        - name: "About Us"
+          url: "/about/"
+        - name: "Why Choose Us"
+          url: "/about/"
+        - name: "Pricing"
+          url: "/pricing/"
+        - name: "Testimonial"
+          url: "/"
+    resources:
+      title: "Resources"
+      list:
+        - name: "Privacy Policy"
+          url: "/"
+        - name: "Terms and Conditions"
+          url: "/"
+        - name: "Blog"
+          url: "/blog/"
+        - name: "Contact Us"
+          url: "/contact/"
+    product:
+      title: "Product"
+      list:
+        - name: "Time Tracker"
+          url: "/products/"
+        - name: "Time Schedule"
+          url: "/products/"
+        - name: "Lead Generation"
+          url: "/products/"
+        - name: "Project Management"
+          url: "/products/"
+        - name: "Remote Collaboration"
+          url: "/products/"
+
+menus:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+    - name: "Products"
+      url: "/products/"
+      weight: 20
+    - name: "Pricing"
+      url: "/pricing/"
+      weight: 30
+    - name: "About Us"
+      url: "/about/"
+      weight: 40
+    - name: "Blog"
+      url: "/blog/"
+      weight: 50
+    - name: "Contact"
+      url: "/contact/"
+      weight: 60
+
+
+
