@@ -1,40 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Finsweet'
 
-[params]
 
-    [params.logo]
-      image = '/images/logo-dark.svg'
-      alt = 'Finsweet'
-
-sectionPagesMenu = 'main'
-
-[menus]
-  [[menus.main]]
-    name = 'Home'
-    url = '/'
-    weight = 10
-  [[menus.main]]
-    name = 'Products'
-    url = '/products/'
-    weight = 20
-  [[menus.main]]
-    name = 'Pricing'
-    url = '/pricing/'
-    weight = 30
-  [[menus.main]]
-    name = 'About Us'
-    url = '/about/'
-    weight = 40
-  [[menus.main]]
-    name = 'Blog'
-    url = '/blog/'
-    weight = 50
-  [[menus.main]]
-    name = 'Contact'
-    url = '/contact/'
-    weight = 60
 
 [module]
   [module.hugoVersion]
