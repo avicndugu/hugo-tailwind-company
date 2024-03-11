@@ -28,7 +28,7 @@ values:
   enabled: true
   title: "Our corporate values"
   content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
-  value_1:
+  value:
     - title: "Best in Class"
       image: "/images/best.svg"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
@@ -38,7 +38,6 @@ values:
     - title: "Email Support"
       image: "/images/email.svg"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
-  value_2:
     - title: "Discount Available"
       image: "/images/discount.svg"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
@@ -53,7 +52,7 @@ teams:
   enabled: true
   title: "Our Talented Team"
   content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
-  team_1:
+  team:
     - name: "Blake Matthews"
       title: "CEO & Co-Founder"
       image: "/images/blake-matthews.png"
@@ -63,7 +62,6 @@ teams:
     - name: "Sarinia Martins"
       title: "Marketing"
       image: "/images/sarinia-martins.png"
-  team_2:
     - name: "Spencer Wright"
       title: "Project management"
       image: "/images/spencer-wright.png"

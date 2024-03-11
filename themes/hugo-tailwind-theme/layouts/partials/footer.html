@@ -67,39 +67,36 @@
                 </div>
             </div>
             {{ end }}
+            {{ with .Site.Params.footer.newsletter }}
             <div class="flex-none">
-                <img src="/images/logo-light.svg" alt="Finsweet logo" class="mb-5">
+                <img src="{{ .image }}" alt="Finsweet logo" class="mb-5">
                 <p class="py-4">
-                    Subscribe to our Newsletter
+                    {{ .content }}
                 </p>
                 <form class="py-6">
-                    <input type="email" name="email" placeholder="Enter your email" class="h-15 px-8 rounded-2xl bg-custom-gray text-white text-base  w-full sm:w-fit">
+                    <input type="email" name="email" placeholder="{{ .form.placeholder }}" class="h-15 px-8 rounded-2xl bg-custom-gray text-white text-base  w-full sm:w-fit">
                     <button type="submit" class="px-10 py-4 rounded-2xl bg-white text-custom-dark font-bold mt-4 sm:mt-0 sm:-ml-10 w-full sm:w-fit">
-                        Subscribe
+                        {{ .form.button }}
                     </button>
                 </form>
             </div>
+            {{ end }}
         </div>
         <div class="flex text-center text-sm items-center">
             <div class="flex-1 h-[1px] md:bg-[#888888] hidden md:block">
             </div>
             <div class="flex-1 flex justify-center flex-wrap gap-y-4 gap-x-6">
+                {{ with .Site.Params.footer.copyright }}
                 <p>
-                    Copyright Finsweet 2022
+                    {{ . }}
                 </p>
+                {{ end }}
                 <div>
-                    <a href="#" class="inline-block px-3 pb-4 lg:pb-0">
-                        <img src="/images/LinkedIn.svg" alt="LinkedIn">
+                    {{ range .Site.Params.footer.social }}
+                    <a href="{{ .link }}" class="inline-block px-3 pb-4 lg:pb-0">
+                        <img src="{{ .image }}" alt="{{ .alt }}">
                     </a>
-                    <a href="#" class="inline-block px-3 pb-4 lg:pb-0">
-                        <img src="/images/Twitter.svg" alt="Twitter">
-                    </a>
-                    <a href="#" class="inline-block px-3 pb-4 lg:pb-0">
-                        <img src="/images/Instagram.svg" alt="Instagram">
-                    </a>
-                    <a href="#" class="inline-block px-3 pb-4 lg:pb-0">
-                        <img src="/images/Facebook.svg" alt="Facebook">
-                    </a>
+                    {{ end }}
                 </div>
             </div>
             <div class="flex-1 h-[1px] md:bg-[#888888] hidden md:block">

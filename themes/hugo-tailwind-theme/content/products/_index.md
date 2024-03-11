@@ -25,7 +25,7 @@ hero:
 benefits:
   enabled: true
   title: "Get the best out of your company with our service"
-  benefit_x:
+  benefit:
     - title: "Security and privacy"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
       image: "/images/icon-security.svg"
@@ -35,7 +35,6 @@ benefits:
     - title: "Collaborate with others"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
       image: "/images/icon-collaborate.svg"
-  benefit_y:
     - title: "Real time sync"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
       image: "/images/icon-sync.svg"
