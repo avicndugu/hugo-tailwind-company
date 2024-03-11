@@ -15,6 +15,9 @@ params:
     image: "/images/team-photo-3.png"
   related_posts:
     title: "Read more posts"
+  menu_button:
+    link: "/contact/"
+    text: "Free trial"
   footer:
     company:
       title: "Company"
@@ -93,9 +96,7 @@ menus:
     - name: "Contact"
       url: "/contact/"
       weight: 60
-  button:
-    link: "/contact/"
-    text: "Free trial"
+
 
 
 
