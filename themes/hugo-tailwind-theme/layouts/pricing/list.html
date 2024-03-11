@@ -27,7 +27,7 @@
             </div>
             <div class="text-lg flex flex-wrap gap-7 py-16 rounded-3xl mx-7 lg:mx-0">
                 {{ range .package }}
-                <div class="mb-6 lg:mb-0 flex-1 py-12 rounded-3xl max-w-sm {{ if .highlighted }} bg-pricing-gradient-3 bg-no-repeat bg-cover border-4 border-[#6B7CFF] {{ else }} bg-white {{ end }}">
+                <div class="mb-6 lg:mb-0 flex-1 py-12 rounded-3xl max-w-sm border-4 {{ if .highlighted }} bg-pricing-gradient-3 bg-no-repeat bg-cover border-[#6B7CFF] {{ else }} bg-white border-white {{ end }} hover:border-[#6B7CFF] hover:border-4">
                     <div class="border-b-2">
                         <div class="flex flex-wrap gap-6 px-12 pb-8">
                             <img src="{{ .image }}" alt="encryption icon">

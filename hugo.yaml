@@ -51,6 +51,27 @@ params:
           url: "/products/"
         - name: "Remote Collaboration"
           url: "/products/"
+    newsletter:
+      image: "/images/logo-light.svg"
+      content: "Subscribe to our Newsletter"
+      form:
+        placeholder: "Enter your email"
+        button: "Subscribe"
+    copyright: "Copyright Finsweet 2024"
+    social:
+      - image: "/images/LinkedIn.svg"
+        alt: "LinkedIn"
+        link: "#"
+      - image: "/images/Twitter.svg"
+        alt: "Twitter"
+        link: "#"
+      - image: "/images/Instagram.svg"
+        alt: "Instagram"
+        link: "#"
+      - image: "/images/Facebook.svg"
+        alt: "Facebook"
+        link: "#"
+
 
 menus:
   main:
@@ -72,6 +93,9 @@ menus:
     - name: "Contact"
       url: "/contact/"
       weight: 60
+  button:
+    link: "/contact/"
+    text: "Free trial"
 
 
 
