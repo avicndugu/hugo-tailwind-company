@@ -16,8 +16,8 @@ params:
   related_posts:
     title: "Read more posts"
   menu_button:
-    link: "/contact/"
-    text: "Free trial"
+    link: "https://github.com/avicndugu/hugo-tailwind-company"
+    text: "Github"
   footer:
     company:
       title: "Company"
@@ -60,7 +60,8 @@ params:
       form:
         placeholder: "Enter your email"
         button: "Subscribe"
-    copyright: "Copyright Finsweet 2024"
+    copyright: |
+      [Conversion to Tailwind & Hugo by Avic Ndugu](https://avicndugu.com) -|- [Design by Finsweet](https://www.figma.com/community/file/1086672799312430578)
     social:
       - image: "/images/LinkedIn.svg"
         alt: "LinkedIn"
