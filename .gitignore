@@ -22,3 +22,8 @@ go.work
 
 # Node modules
 node_modules
+
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/

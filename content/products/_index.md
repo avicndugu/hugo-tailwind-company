@@ -14,7 +14,7 @@ hero:
     outline:
       text: "Contact Us"
       link: "#"
-  image: "/images/dashboard-image.png"
+  image_link: "/images/dashboard-image.png"
   image_alt: "product dashboard image"
   brands:
     - image: "/images/logo-1.svg"
@@ -53,19 +53,19 @@ offers:
     - title: "Data-driven client feedback"
       label: "Marketing insights"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore. At dolore magna aliquyam erat, sed diam voluptua invid unt ut labore."
-      image: "/images/impressions-conversion-image-bigger.png"
+      image_link: "/images/impressions-conversion-image-bigger.png"
     - title: "Track your project performance"
       label: "Time tracker"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore. At dolore magna aliquyam erat, sed diam voluptua invid unt ut labore."
-      image: "/images/track-your-performance.png"
+      image_link: "/images/track-your-performance.png"
     - title: "More leads that convert"
       label: "Lead Generation"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore. At dolore magna aliquyam erat, sed diam voluptua invid unt ut labore."
-      image: "/images/impressions-conversion-image-bigger.png"
+      image_link: "/images/impressions-conversion-image-bigger.png"
     - title: "Real-time collaboration"
       label: "Remote teams"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore. At dolore magna aliquyam erat, sed diam voluptua invid unt ut labore."
-      image: "/images/track-your-performance.png"
+      image_link: "/images/track-your-performance.png"
 
 features:
   enabled: true

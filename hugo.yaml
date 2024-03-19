@@ -4,6 +4,9 @@ title: "finsweet"
 
 theme: "hugo-tailwind-theme"
 
+imaging:
+  quality: 100
+
 author:
   name: "Default Author"
 

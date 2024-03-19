@@ -22,7 +22,7 @@
             {{ end }}
         </div>
         <div class="flex justify-center">
-            <img src="{{ .image }}" alt="dashboard image">
+            {{ partial "picture.html" . }}
         </div>
     </div>
 </section>
@@ -107,7 +107,7 @@
             {{ end }}
         </div>
         <div class="flex-1 pt-14 lg:pt-0">
-            <img src="{{ .image }}">
+            {{ partial "picture.html" . }}
         </div>
     </div>
 </section>

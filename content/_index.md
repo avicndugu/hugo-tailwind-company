@@ -10,8 +10,8 @@ hero:
   form:
     text: "Enter your email"
     button: "Subscribe"
-  image: "images/dashboard-image.png"
-
+  image_link: "images/dashboard-image.png"
+  image_alt: "dashboard image"
 benefits:
   enabled: true
   title: "We have the Best Solution for your Business"
@@ -47,8 +47,8 @@ call_to_action:
   button:
     text: "Get Free trial"
     link: "#"
-  image: "images/impressions-conversion-image.png"
-
+  image_link: "images/impressions-conversion-image.png"
+  image_alt: "impressions conversion rates screenshot"
 brands:
   enabled: true
   brand:
