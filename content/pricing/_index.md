@@ -15,7 +15,7 @@ hero:
   package:
     - title: "Regular"
       label: "Starter Plan"
-      image: "/images/icon-regular.svg"
+      image_link: "/images/icon-regular.png"
       highlighted: false
       features:
         feature:
@@ -32,7 +32,7 @@ hero:
         link: "/contact/"
     - title: "Platinum"
       label: "For the best results"
-      image: "/images/icon-platinum.svg"
+      image_link: "/images/icon-platinum.png"
       highlighted: true
       features:
         feature:
@@ -49,7 +49,7 @@ hero:
         link: "/contact/"
     - title: "Standard"
       label: "Most Popular"
-      image: "/images/icon-standard.svg"
+      image_link: "/images/icon-standard.png"
       highlighted: false
       features:
         feature:

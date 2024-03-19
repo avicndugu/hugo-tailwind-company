@@ -10,7 +10,22 @@
         </p>
     </div>
     <div class="container mx-auto max-w-screen-xl lg:flex lg:justify-center gap-6">
-        <div class="bg-cover bg-no-repeat bg-center w-full h-80 lg:h-[512px] rounded-xl" style="background-image: url('{{- if .Params.image -}}{{- .Params.image -}}{{- else -}}{{- .Site.Params.default_hero_image.image -}}{{- end -}}');">
+        <div class="bg-cover bg-no-repeat bg-center w-full h-80 lg:h-[512px] rounded-xl"
+            style="background-image: url('{{- if .Params.image -}}
+                {{- $image := resources.GetMatch .Params.image -}}
+                {{- with $image -}}
+                    {{- with .Resize "400x webp" -}}
+                        {{- .RelPermalink -}}
+                    {{- end -}}
+                {{- end -}}
+                {{- else -}}
+                {{- $image := resources.GetMatch .Site.Params.default_hero_image.image -}}
+                    {{- with $image -}}
+                    {{- with .Resize "400x webp" -}}
+                        {{- .RelPermalink -}}
+                    {{- end -}}
+                    {{- end -}}
+                {{- end -}}');">
         </div>
     </div>
     <div class="container mx-auto max-w-3xl pt-16">
@@ -33,7 +48,23 @@
             {{ $filtered_blog:= where $blog.RegularPages "Params.Title" "ne" .Title }}
             {{ range first 3 $filtered_blog }}
             <div class="flex-1 mb-16">
-                <div class="bg-[url('images/team-photo-3.png')] bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8" style="background-image: url('{{- if .Params.image -}}{{- .Params.image -}}{{- else -}}{{- .Site.Params.default_hero_image.image -}}{{- end -}}');"></div>
+                <div class="bg-[url('images/team-photo-3.png')] bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8"
+                    style="background-image: url('{{- if .Params.image -}}
+                    {{- $image := resources.GetMatch .Params.image -}}
+                    {{- with $image -}}
+                        {{- with .Resize "400x webp" -}}
+                            {{- .RelPermalink -}}
+                        {{- end -}}
+                    {{- end -}}
+                    {{- else -}}
+                    {{- $image := resources.GetMatch .Site.Params.default_hero_image.image -}}
+                        {{- with $image -}}
+                        {{- with .Resize "400x webp" -}}
+                            {{- .RelPermalink -}}
+                        {{- end -}}
+                        {{- end -}}
+                    {{- end -}}');">
+                </div>
                 <div>
                     <a href="{{ .Permalink }}" class="text-2xl font-bold mb-4">
                         {{ .Title }}

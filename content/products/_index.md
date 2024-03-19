@@ -17,11 +17,11 @@ hero:
   image_link: "/images/dashboard-image.png"
   image_alt: "product dashboard image"
   brands:
-    - image: "/images/logo-1.svg"
-    - image: "/images/logo-2.svg"
-    - image: "/images/logo-3.svg"
-    - image: "/images/logo-4.svg"
-    - image: "/images/logo-5.svg"
+    - image_link: "/images/logo-1.png"
+    - image_link: "/images/logo-2.png"
+    - image_link: "/images/logo-3.png"
+    - image_link: "/images/logo-4.png"
+    - image_link: "/images/logo-5.png"
 
 benefits:
   enabled: true
@@ -29,22 +29,22 @@ benefits:
   benefit:
     - title: "Security and privacy"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/icon-security.svg"
+      image_link: "/images/icon-security.png"
     - title: "Built-in AI features"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/icon-ai-star.svg"
+      image_link: "/images/icon-ai-star.png"
     - title: "Collaborate with others"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/icon-collaborate.svg"
+      image_link: "/images/icon-collaborate.png"
     - title: "Real time sync"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/icon-sync.svg"
+      image_link: "/images/icon-sync.png"
     - title: "Built-in AI features"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/icon-ai-head.svg"
+      image_link: "/images/icon-ai-head.png"
     - title: "Easy notes organization"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/icon-notes.svg"
+      image_link: "/images/icon-notes.png"
 
 
 offers:
@@ -73,13 +73,13 @@ features:
   feature:
     - title: "Advanced 256-bit encryption"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/encryption-icon.svg"
+      image_link: "/images/encryption-icon.png"
     - title: "Simple collaboration tools"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/collaboration-icon.svg"
+      image_link: "/images/collaboration-icon.png"
     - title: "Customizable AI features"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-      image: "/images/robot-icon.svg"
+      image_link: "/images/robot-icon.png"
 
 
 
