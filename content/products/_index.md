@@ -15,6 +15,7 @@ hero:
       text: "Contact Us"
       link: "#"
   image: "/images/dashboard-image.png"
+  image_alt: "product dashboard image"
   brands:
     - image: "/images/logo-1.svg"
     - image: "/images/logo-2.svg"

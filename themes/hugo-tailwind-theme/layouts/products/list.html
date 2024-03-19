@@ -84,7 +84,7 @@
         <div class="container mx-auto px-4 lg:px-0 py-16 text-lg lg:flex gap-x-16 items-center max-w-screen-xl {{ if eq (mod $index 2) 0 }} lg:flex-row {{ else }} lg:flex-row-reverse {{ end }}">
             <div class="flex-1">
                 <p class="text-2xl pb-6 font-bold bg-gradient-to-r from-custom-blue-dark from-15% to-custom-blue-light to-83% bg-clip-text text-transparent w-fit">
-                    Marketing insights
+                    {{ .label }}
                 </p>
                 <h2 class="text-4xl lg:text-5xl font-bold pb-6">
                     Data-driven client feedback
@@ -94,7 +94,7 @@
                 </p>
             </div>
             <div class="flex-1 pt-14 lg:pt-0">
-                <img src="{{ .image }}">
+                <img src="{{ .image }}" alt="{{ .label }}">
             </div>
         </div>
     </section>
