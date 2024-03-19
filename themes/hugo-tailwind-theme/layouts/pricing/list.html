@@ -30,7 +30,7 @@
                 <div class="mb-6 lg:mb-0 flex-1 py-12 rounded-3xl max-w-sm border-4 {{ if .highlighted }} bg-pricing-gradient-3 bg-no-repeat bg-cover border-[#6B7CFF] {{ else }} bg-white border-white {{ end }} hover:border-[#6B7CFF] hover:border-4">
                     <div class="border-b-2">
                         <div class="flex flex-wrap gap-6 px-12 pb-8">
-                            <img src="{{ .image }}" alt="encryption icon">
+                            <img src="{{ .image }}"  width="54" height="54">
                             <div>
                                 <h3 class="text-3xl lg:text-4xl font-bold">
                                     {{ .title }}
@@ -93,8 +93,8 @@
                             <h3 class="text-2xl font-bold">
                                 {{ .title }}
                             </h3>
-                            <img src="/images/icon-plus.svg" class="block group-open:hidden">
-                            <img src="/images/icon-minus.svg" class=" hidden group-open:block">
+                            <img src="/images/icon-plus.svg" class="block group-open:hidden" width="20" height="20">
+                            <img src="/images/icon-minus.svg" class=" hidden group-open:block" width="20" height="20">
                         </summary>
                         <p class="mt-4 text-base">
                             {{ .content }}
