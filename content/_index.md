@@ -18,13 +18,13 @@ benefits:
   label: "High-quality"
   benefit:
     - title: "High security to protect from piracy"
-      image: "/images/security-icon.svg"
+      image_link: "/images/security-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy"
     - title: "Premium quality performance"
-      image: "/images/quality-icon.svg"
+      image_link: "/images/quality-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy"
     - title: "Full time customer support - 24/7"
-      image: "/images/headset-icon.svg"
+      image_link: "/images/headset-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy"
 
 advantages:
@@ -33,11 +33,11 @@ advantages:
   title: "To upscale your business to the next level"
   content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore."
   advantage:
-    - image: "/images/arrow-point-right.svg"
+    - image_link: "/images/arrow-point-right.png"
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
-    - image: "/images/arrow-point-right.svg"
+    - image_link: "/images/arrow-point-right.png"
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
-    - image: "/images/arrow-point-right.svg"
+    - image_link: "/images/arrow-point-right.png"
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
 
 call_to_action:
@@ -52,11 +52,11 @@ call_to_action:
 brands:
   enabled: true
   brand:
-    - image: "/images/logo-1.svg"
-    - image: "/images/logo-2.svg"
-    - image: "/images/logo-3.svg"
-    - image: "/images/logo-4.svg"
-    - image: "/images/logo-5.svg"
+    - image_link: "/images/logo-1.png"
+    - image_link: "/images/logo-2.png"
+    - image_link: "/images/logo-3.png"
+    - image_link: "/images/logo-4.png"
+    - image_link: "/images/logo-5.png"
 
 offers:
   enabled: true
@@ -65,13 +65,13 @@ offers:
   content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore."
   offer:
     - title: "Sales Tracking"
-      image: "/images/sales-icon.svg"
+      image_link: "/images/sales-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
     - title: "Project Management"
-      image: "/images/project-icon.svg"
+      image_link: "/images/project-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
     - title: "Activity Report"
-      image: "/images/activity-icon.svg"
+      image_link: "/images/activity-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
 
 
@@ -79,13 +79,13 @@ features:
   enabled: true
   feature:
     - title: "Advanced 256-bit encryption"
-      icon: "images/encryption-icon.svg"
+      image_link: "/images/encryption-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
     - title: "Simple collaboration tools"
-      icon: "images/collaboration-icon.svg"
+      image_link: "/images/collaboration-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
     - title: "Customizable AI features"
-      icon: "images/robot-icon.svg"
+      image_link: "/images/robot-icon.png"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
 
 reviews:
@@ -93,15 +93,15 @@ reviews:
   title: "The stunning results our customers have experienced"
   review:
     - name: "Ron Wood"
-      image: "/images/customer-1.jpg"
+      image_link: "/images/customer-1.jpg"
       title: "CEO"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua"
     - name: "Mark Mason"
-      image: "/images/customer-2.jpg"
+      image_link: "/images/customer-2.jpg"
       title: "Marketing Manager"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua"
     - name: "Sam Preston"
-      image: "/images/customer-3.jpg"
+      image_link: "/images/customer-3.jpg"
       title: "CTO"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua"
 
