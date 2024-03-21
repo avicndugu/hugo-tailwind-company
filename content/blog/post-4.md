@@ -1,5 +1,6 @@
 ---
 title: "How to Make Data-driven Pricing Decisions"
+description: "post 4 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 date: 2023-04-15T09:00:00-07:00
 author: "Luke Matthewss"
 image: "/images/team-photo-2.png"

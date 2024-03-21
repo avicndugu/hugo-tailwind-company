@@ -1,5 +1,6 @@
 ---
 title: "How to Calculate Your SaaS Gross Margin"
+description: "post 6 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 date: 2023-01-15T09:00:00-07:00
 author: "Luke Matthewss"
 image: "/images/team-photo-1.png"

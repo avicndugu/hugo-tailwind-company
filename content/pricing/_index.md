@@ -1,6 +1,6 @@
 ---
 title: "Pricing"
-
+description: "Pricing description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 hero:
   enabled: true
   title: "Pricing plans that suit you"

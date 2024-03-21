@@ -1,5 +1,6 @@
 ---
 title: "How to Make Recurring Invoicing More Efficient"
+description: "post 3 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 date: 2023-03-15T09:00:00-07:00
 author: "Luke Matthewss"
 image: "/images/team-photo-2.png"

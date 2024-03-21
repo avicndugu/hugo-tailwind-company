@@ -1,5 +1,6 @@
 ---
 title: "Account-based marketing: Data-driven selection for ABM success"
+description: "post 7 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 date: 2023-07-15T09:00:00-07:00
 author: "Luke Matthewss"
 image: "/images/team-photo-2.png"

@@ -1,5 +1,6 @@
 ---
 title: "7 Automation use cases that foster excellent CX"
+description: "post 9 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 date: 2023-09-15T09:00:00-07:00
 author: "Luke Matthewss"
 image: "/images/team-photo-1.png"

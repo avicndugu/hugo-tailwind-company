@@ -1,6 +1,6 @@
 ---
 title: "About"
-
+description: "About description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 hero:
   enabled: true
   title: "We are proud of our products"

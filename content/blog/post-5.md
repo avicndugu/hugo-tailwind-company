@@ -1,5 +1,6 @@
 ---
 title: "The Five Main Benefits of Automating your Accounts Receivable Process"
+description: "post 5 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 date: 2023-05-15T09:00:00-07:00
 author: "Luke Matthewss"
 image: "/images/team-photo-3.png"

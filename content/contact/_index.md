@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-
+description: "Contact description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
 hero:
   enabled: true
   title: "Get in touch with us"
