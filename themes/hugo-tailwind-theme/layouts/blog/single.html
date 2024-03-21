@@ -14,14 +14,14 @@
             style="background-image: url('{{- if .Params.image -}}
                 {{- $image := resources.GetMatch .Params.image -}}
                 {{- with $image -}}
-                    {{- with .Resize "400x webp" -}}
+                    {{- with .Resize "1000x webp" -}}
                         {{- .RelPermalink -}}
                     {{- end -}}
                 {{- end -}}
                 {{- else -}}
                 {{- $image := resources.GetMatch .Site.Params.default_hero_image.image -}}
                     {{- with $image -}}
-                    {{- with .Resize "400x webp" -}}
+                    {{- with .Resize "1000x webp" -}}
                         {{- .RelPermalink -}}
                     {{- end -}}
                     {{- end -}}

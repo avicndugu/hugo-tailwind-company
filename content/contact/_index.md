@@ -24,12 +24,12 @@ contacts:
   contact_details:
     - title: "+ 1800 145 276"
       content: "Free support"
-      image: "/images/icon-phone.svg"
+      image_link: "/images/icon-phone.png"
     - title: "finsweet@gmail.com"
       content: "Help Email support"
-      image: "/images/icon-email-finsweet.svg"
+      image_link: "/images/icon-email-finsweet.png"
     - title: "sales@finsweet.com"
       content: "Sales Enquiry"
-      image: "/images/icon-email-sales.svg"
+      image_link: "/images/icon-email-sales.png"
 
 ---

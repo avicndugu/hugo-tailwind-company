@@ -3,7 +3,6 @@ title: "How to Make Data-driven Pricing Decisions"
 date: 2023-04-15T09:00:00-07:00
 author: "Luke Matthewss"
 image: "/images/team-photo-2.png"
-
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui auctor dictum eget a elit. Pellentesque varius diam risus, ut condimentum lorem volutpat vel.

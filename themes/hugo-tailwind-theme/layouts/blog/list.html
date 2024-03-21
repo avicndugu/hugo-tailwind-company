@@ -19,9 +19,11 @@
                 <p class="text-2xl pb-6 font-bold bg-gradient-to-r from-custom-blue-dark from-15% to-custom-blue-light to-83% bg-clip-text text-transparent w-fit">
                     {{ .label }}
                 </p>
-                <h2 class="text-4xl lg:text-5xl font-bold pb-6">
-                    {{ .title }}
-                </h2>
+                <a href="{{ .Permalink }}">
+                    <h2 class="text-4xl lg:text-5xl font-bold pb-6">
+                        {{ .title }}
+                    </h2>
+                </a>
                 <p class="text-base pb-8">
                     {{ .content }}
                 </p>
@@ -29,8 +31,9 @@
                     {{ .author }} |  {{ .date }}
                 </p>
             </div>
+            <div class="w-full">
             {{ $image := resources.GetMatch .image }}
-            <div class="bg-cover bg-no-repeat bg-center w-full h-64 lg:h-80 rounded-xl mt-8"
+            <a href="{{ .Permalink }}" class="block bg-cover bg-no-repeat bg-center w-full h-64 lg:h-80 rounded-xl mt-8"
                 style="background-image: url('
                 {{- with $image -}}
                     {{- with .Resize "x500 webp" -}}
@@ -38,7 +41,8 @@
                     {{- end -}}
                 {{- end -}}
                 ');">
-            </div>
+            </a>
+        </div>
         </div>
         {{ end }}
     </div>
@@ -65,6 +69,7 @@
                 {{ $blog := site.GetPage "blog" }}
                 {{ range $blog.RegularPages }}
                 <div class="mb-16">
+                    <a href="{{ .Permalink }}">
                     <div class="bg-cover bg-no-repeat bg-center w-full h-64 rounded-xl mb-8"
                         style="background-image: url('{{- if .Params.image -}}
                             {{- $image := resources.GetMatch .Params.image -}}
@@ -83,6 +88,7 @@
                             {{- end -}}');">
 
                     </div>
+                    </a>
                     <div>
                         <a href="{{ .Permalink }}" class="text-2xl font-bold mb-4">
                             {{ .Title }}

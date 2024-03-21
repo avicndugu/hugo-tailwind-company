@@ -7,6 +7,7 @@ hero:
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor."
   featured:
     label: "Trending Post"
+    permalink: "/blog/post-4/"
     title: "New invoicing features to help you get paid faster"
     content: "Over the past few months, we’ve added several new features to SaaS Invoicing to help any business get paid faster and streamline their collection workflows."
     image: "/images/team-photo-3.png"

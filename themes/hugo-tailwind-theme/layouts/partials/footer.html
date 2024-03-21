@@ -1,18 +1,20 @@
+{{ with .Site.Params.call_to_action }}
 <section class="bg-cta-gradient bg-no-repeat bg-cover px-5 2xl:px-0">
     <div class="container mx-auto py-20 lg:py-32 text-lg text-center max-w-2xl">
         <h2 class="text-4xl lg:text-5xl font-bold pb-6">
-            Are you ready to grow your business with us?
+            {{ .title }}
         </h2>
         <p class="pb-8 text-base">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+           {{ .content }}
         </p>
-        <a href="/pricing/"  class="bg-custom-dark font-medium text-base text-white px-10 py-4 rounded-2xl">
-            View Pricing
+        {{ with .button }}
+        <a href="{{ .link }}"  class="bg-custom-dark font-medium text-base text-white px-10 py-4 rounded-2xl">
+            {{ .text }}
         </a>
+        {{ end }}
     </div>
 </section>
-
-
+{{ end }}
 
 <footer class="bg-custom-dark text-white">
     <div class="container px-5 2xl:px-0 py-6 lg:py-16 max-w-screen-xl">
@@ -69,7 +71,13 @@
             {{ end }}
             {{ with .Site.Params.footer.newsletter }}
             <div class="flex-none">
-                <img src="{{ .image }}" alt="{{ site.Title }}" class="mb-5" width="140" height="29">
+                {{- $image := resources.GetMatch .image -}}
+                {{- $image_alt := .Site.Title -}}
+                {{- with $image -}}
+                    {{- with .Resize (printf "%dx%d webp" (mul .Width 2) (mul .Height 2)) }}
+                        <img src="{{ .RelPermalink }}" alt="{{ site.Title }}" width="{{ div .Width 2 }}" height="{{ div .Height 2 }}">
+                    {{- end -}}
+                {{- end -}}
                 <p class="py-4">
                     {{ .content }}
                 </p>

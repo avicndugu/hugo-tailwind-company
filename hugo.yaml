@@ -12,7 +12,7 @@ author:
 
 params:
   logo:
-    image: "/images/logo-dark.svg"
+    image: "/images/logo-dark.png"
     alt: "Finsweet"
   default_hero_image:
     image: "/images/team-photo-3.png"
@@ -21,6 +21,12 @@ params:
   menu_button:
     link: "https://github.com/avicndugu/hugo-tailwind-company"
     text: "Github"
+  call_to_action:
+    title: "Are you ready to grow your business with us?"
+    content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
+    button:
+      link: "/pricing/"
+      text: "View Pricing"
   footer:
     company:
       title: "Company"
@@ -58,7 +64,7 @@ params:
         - name: "Remote Collaboration"
           url: "/products/"
     newsletter:
-      image: "/images/logo-light.svg"
+      image: "/images/logo-light.png"
       content: "Subscribe to our Newsletter"
       form:
         placeholder: "Enter your email"

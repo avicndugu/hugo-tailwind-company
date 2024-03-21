@@ -59,7 +59,7 @@
                 <div class="max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 pt-12 pr-4 lg:pt-16 lg:pr-16">
                     {{ range .benefit }}
                     <div>
-                        {{ partial "picture.html" . }}
+                        {{ partial "icon.html" . }}
                         <h3 class="text-2xl font-bold py-4">
                             {{ .title }}
                         </h3>
@@ -87,7 +87,7 @@
                     {{ .label }}
                 </p>
                 <h2 class="text-4xl lg:text-5xl font-bold pb-6">
-                    Data-driven client feedback
+                    {{ .title }}
                 </h2>
                 <p class="pb-8 text-base">
                     {{ .content }}
@@ -113,7 +113,7 @@
         {{ range $index, $element:= .feature }}
         <div class="lg:pr-8 mb-6 lg:mb-0 flex-1 {{ if gt $index 0 }} lg:pl-8 {{ end }}">
             <div class="pb-6">
-                {{ partial "picture.html" . }}
+                {{ partial "icon.html" . }}
             </div>
             <h3 class="text-3xl lg:text-4xl font-bold pb-4">
                 {{ .title }}

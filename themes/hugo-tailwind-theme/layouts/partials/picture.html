@@ -9,7 +9,7 @@
         {{ end }}
         {{ with .Resize (printf "%dx%d webp" .Width .Height)}}
             <source media="(min-width: 800px)" srcset="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
-            <img src="{{ .RelPermalink }}" {{- with  $image_alt -}} alt="{{ . }}" {{ end }} width="{{ .Width }}" height="{{ .Height }}">
+            <img src="{{ .RelPermalink }}" alt="{{- with  $image_alt -}} {{- . -}}{{- end -}}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
     </picture>
 {{ end }}

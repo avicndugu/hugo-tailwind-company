@@ -71,7 +71,9 @@
                 <div class="lg:pl-8 lg:pr-8 mb-6 lg:mb-0 basis-2/5">
                     {{ range . }}
                     <div class="flex flex-wrap gap-6 pb-12">
-                        <img src="{{ .image }}"  width="48" height="48">
+                        <div>
+                            {{ partial "icon.html" . }}
+                        </div>
                         <div>
                             <p class="text-xl sm:text-2xl font-bold pb-1">
                                 {{ .title }}
