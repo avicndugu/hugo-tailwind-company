@@ -4,6 +4,7 @@
   "description": "## Features",
   "main": "index.js",
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "tailwindcss": "^3.4.1"
   },
   "scripts": {
