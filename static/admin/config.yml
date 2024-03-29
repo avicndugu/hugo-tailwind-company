@@ -8,9 +8,9 @@ publish_mode: editorial_workflow
 media_folder: static/images/
 public_folder: /images/
 collections:
-  - name: 'posts'
+  - name: 'Posts'
     label: 'posts'
-    folder: '_posts/'
+    folder: 'content/blog/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
@@ -31,5 +31,14 @@ collections:
             { label: 'sidebar', name: 'sidebar', widget: 'boolean', required: false },
           ]
         }
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - name: 'home'
+        label: 'Home'
+        file: 'content/_index.md'
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: draft, label: Draft, widget: boolean, default: true }
 
     preview_path: /{{slug}}

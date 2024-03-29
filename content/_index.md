@@ -1,6 +1,5 @@
 ---
 title: 'Home'
-date: 2023-01-01T08:00:00-07:00
 draft: false
 
 hero:
@@ -12,6 +11,7 @@ hero:
     button: "Subscribe"
   image_link: "images/dashboard-image.png"
   image_alt: "dashboard image"
+
 benefits:
   enabled: true
   title: "We have the Best Solution for your Business"
