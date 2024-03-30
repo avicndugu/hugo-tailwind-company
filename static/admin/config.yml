@@ -136,6 +136,7 @@ collections:
                     widget: 'list',
                     allow_add: false,
                     field: { name: 'image_link', label: 'Image Link', widget: 'string' }
+                  }
                 ]
             }
           - {
