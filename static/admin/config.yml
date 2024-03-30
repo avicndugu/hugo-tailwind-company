@@ -52,5 +52,178 @@ collections:
                   { name: 'image_alt', label: 'Image Alt Text', widget: 'string' }
                 ]
             }
+          - {
+              name: 'benefits',
+              label: 'Benefits',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  { name: 'label', label: 'label', widget: 'string' },
+                  {
+                    name: 'benefit',
+                    label: 'Benefit',
+                    widget: 'list',
+                    allow_add: false,
+                    fields:
+                      [
+                        { name: 'title', label: 'Title', widget: 'string' },
+                        { name: 'content', label: 'content', widget: 'string' },
+                        { name: 'image_link', label: 'Image Link', widget: 'string' },
+                      ]
+                  },
+                ]
+            }
+          - {
+              name: 'advantages',
+              label: 'Advantages',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  { name: 'label', label: 'label', widget: 'string' },
+                  { name: 'content', label: 'content', widget: 'string' },
+                  {
+                    name: 'advantage',
+                    label: 'Advantage',
+                    widget: 'list',
+                    allow_add: false,
+                    fields:
+                      [
+                        { name: 'image_link', label: 'Image Link', widget: 'string' },
+                        { name: 'content', label: 'content', widget: 'string' },
+                      ]
+                  },
+                ]
+            }
+          - {
+              name: 'call_to_action',
+              label: 'Call to Action',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  { name: 'content', label: 'content', widget: 'string' },
+                  {
+                    name: 'button',
+                    label: 'Button',
+                    widget: 'object',
+                    fields:
+                      [
+                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                        { name: 'link', label: 'Link', widget: 'string' }
+                      ]
+                  },
+                  { name: 'image_link', label: 'Image Link', widget: 'string' },
+                  { name: 'image_alt', label: 'Image Alt Text', widget: 'string' }
+                ]
+            }
+          - {
+              name: 'brands',
+              label: 'Brands',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  { name: 'content', label: 'content', widget: 'string' },
+                  {
+                    name: 'brand',
+                    label: 'Brand',
+                    widget: 'list',
+                    allow_add: false,
+                    field: { name: 'image_link', label: 'Image Link', widget: 'string' }
+                ]
+            }
+          - {
+              name: 'offers',
+              label: 'offers',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  { name: 'label', label: 'label', widget: 'string' },
+                  {
+                    name: 'offer',
+                    label: 'offer',
+                    widget: 'list',
+                    allow_add: false,
+                    fields:
+                      [
+                        { name: 'title', label: 'Title', widget: 'string' },
+                        { name: 'content', label: 'content', widget: 'string' },
+                        { name: 'image_link', label: 'Image Link', widget: 'string' },
+                      ]
+                  },
+                ]
+            }
+          - {
+              name: 'features',
+              label: 'Features',
+              widget: 'object',
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                {
+                  name: 'feature',
+                  label: 'Feature',
+                  widget: 'list',
+                  allow_add: false,
+                  fields:
+                    [
+                      { name: 'title', label: 'Title', widget: 'string' },
+                      { name: 'content', label: 'content', widget: 'string' },
+                      { name: 'image_link', label: 'Image Link', widget: 'string' },
+                    ]
+                },
+              ]
+            }
+          - {
+              name: 'reviews',
+              label: 'Reviews',
+              widget: 'object',
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                {
+                  name: 'review',
+                  label: 'Review',
+                  widget: 'list',
+                  allow_add: false,
+                  fields:
+                    [
+                      { name: 'name', label: 'Name', widget: 'string' },
+                      { name: 'title', label: 'Title', widget: 'string' },
+                      { name: 'content', label: 'content', widget: 'string' },
+                      { name: 'image_link', label: 'Image Link', widget: 'string' },
+                    ]
+                },
+              ]
+            }
+          - {
+              name: 'promotion',
+              label: 'promotion',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  { name: 'content', label: 'content', widget: 'string' },
+                  {
+                    name: 'button',
+                    label: 'Button',
+                    widget: 'object',
+                    fields:
+                      [
+                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                        { name: 'link', label: 'Link', widget: 'string' }
+                      ]
+                  },
+                ]
+            }
 
     preview_path: /{{slug}}

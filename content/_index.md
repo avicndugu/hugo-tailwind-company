@@ -49,6 +49,7 @@ call_to_action:
     link: "#"
   image_link: "images/impressions-conversion-image.png"
   image_alt: "impressions conversion rates screenshot"
+
 brands:
   enabled: true
   brand:
@@ -77,6 +78,7 @@ offers:
 
 features:
   enabled: true
+  title: "Features"
   feature:
     - title: "Advanced 256-bit encryption"
       image_link: "/images/encryption-icon.png"
