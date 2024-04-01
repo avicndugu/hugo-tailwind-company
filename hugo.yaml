@@ -109,5 +109,8 @@ menus:
       weight: 60
 
 
+permalinks:
+  posts: /blog/:title/
+
 
 
