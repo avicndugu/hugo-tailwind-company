@@ -5,7 +5,7 @@ backend:
   base_url: https://hugo-tailwind-company.pages.dev/
   auth_endpoint: /api/auth
 publish_mode: editorial_workflow
-media_folder: static/images/
+media_folder: assets/images/
 public_folder: /images/
 collections:
   - name: 'blog'
