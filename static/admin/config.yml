@@ -34,100 +34,91 @@ collections:
               name: 'hero',
               label: 'Hero',
               widget: 'object',
-              fields:
-                [
-                  { name: 'title', label: 'Title', widget: 'string' },
-                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
-                  { name: 'content', label: 'content', widget: 'string' },
-                  {
-                    name: 'form',
-                    label: 'Form',
-                    widget: 'object',
-                    fields:
-                      [
-                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
-                        { name: 'button', label: 'Button Text', widget: 'string' }
-                      ]
-                  },
-                  { name: 'image_link', label: 'Image Link', widget: 'image' },
-                  { name: 'image_alt', label: 'Image Alt Text', widget: 'string' }
-                ]
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'content', label: 'content', widget: 'string' },
+                {
+                  name: 'form',
+                  label: 'Form',
+                  widget: 'object',
+                  fields: [
+                    { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                    { name: 'button', label: 'Button Text', widget: 'string' }
+                  ]
+                },
+                { name: 'image_link', label: 'Image Link', widget: 'image' },
+                { name: 'image_alt', label: 'Image Alt Text', widget: 'string' }
+              ]
             }
           - {
               name: 'benefits',
               label: 'Benefits',
               widget: 'object',
-              fields:
-                [
-                  { name: 'title', label: 'Title', widget: 'string' },
-                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
-                  { name: 'label', label: 'label', widget: 'string' },
-                  {
-                    name: 'benefit',
-                    label: 'Benefit',
-                    widget: 'list',
-                    allow_add: false,
-                    fields:
-                      [
-                        { name: 'title', label: 'Title', widget: 'string' },
-                        { name: 'content', label: 'content', widget: 'string' },
-                        { name: 'image_link', label: 'Image Link', widget: 'image' },
-                      ]
-                  },
-                ]
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'label', label: 'label', widget: 'string' },
+                {
+                  name: 'benefit',
+                  label: 'Benefit',
+                  widget: 'list',
+                  allow_add: false,
+                  fields: [
+                    { name: 'title', label: 'Title', widget: 'string' },
+                    { name: 'content', label: 'content', widget: 'string' },
+                    { name: 'image_link', label: 'Image Link', widget: 'image' },
+                  ]
+                },
+              ]
             }
           - {
               name: 'advantages',
               label: 'Advantages',
               widget: 'object',
-              fields:
-                [
-                  { name: 'title', label: 'Title', widget: 'string' },
-                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
-                  { name: 'label', label: 'label', widget: 'string' },
-                  { name: 'content', label: 'content', widget: 'string' },
-                  {
-                    name: 'advantage',
-                    label: 'Advantage',
-                    widget: 'list',
-                    allow_add: false,
-                    fields:
-                      [
-                        { name: 'image_link', label: 'Image Link', widget: 'image' },
-                        { name: 'content', label: 'content', widget: 'string' },
-                      ]
-                  },
-                ]
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'label', label: 'label', widget: 'string' },
+                { name: 'content', label: 'content', widget: 'string' },
+                {
+                  name: 'advantage',
+                  label: 'Advantage',
+                  widget: 'list',
+                  allow_add: false,
+                  fields: [
+                    { name: 'image_link', label: 'Image Link', widget: 'image' },
+                    { name: 'content', label: 'content', widget: 'string' },
+                  ]
+                },
+              ]
             }
           - {
               name: 'call_to_action',
               label: 'Call to Action',
               widget: 'object',
-              fields:
-                [
-                  { name: 'title', label: 'Title', widget: 'string' },
-                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
-                  { name: 'content', label: 'content', widget: 'string' },
-                  {
-                    name: 'button',
-                    label: 'Button',
-                    widget: 'object',
-                    fields:
-                      [
-                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
-                        { name: 'link', label: 'Link', widget: 'string' }
-                      ]
-                  },
-                  { name: 'image_link', label: 'Image Link', widget: 'image' },
-                  { name: 'image_alt', label: 'Image Alt Text', widget: 'string' }
-                ]
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'content', label: 'content', widget: 'string' },
+                {
+                  name: 'button',
+                  label: 'Button',
+                  widget: 'object',
+                  fields: [
+                    { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                    { name: 'link', label: 'Link', widget: 'string' }
+                  ]
+                },
+                { name: 'image_link', label: 'Image Link', widget: 'image' },
+                { name: 'image_alt', label: 'Image Alt Text', widget: 'string' }
+              ]
             }
           - {
               name: 'brands',
               label: 'Brands',
               widget: 'object',
-              fields:
-                [
+              fields: [
                   { name: 'title', label: 'Title', widget: 'string' },
                   { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
                   { name: 'content', label: 'content', widget: 'string' },
@@ -144,8 +135,7 @@ collections:
               name: 'offers',
               label: 'offers',
               widget: 'object',
-              fields:
-                [
+              fields: [
                   { name: 'title', label: 'Title', widget: 'string' },
                   { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
                   { name: 'label', label: 'label', widget: 'string' },
@@ -210,22 +200,20 @@ collections:
               name: 'promotion',
               label: 'promotion',
               widget: 'object',
-              fields:
-                [
-                  { name: 'title', label: 'Title', widget: 'string' },
-                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
-                  { name: 'content', label: 'content', widget: 'string' },
-                  {
-                    name: 'button',
-                    label: 'Button',
-                    widget: 'object',
-                    fields:
-                      [
-                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
-                        { name: 'link', label: 'Link', widget: 'string' }
-                      ]
-                  },
-                ]
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'content', label: 'content', widget: 'string' },
+                {
+                  name: 'button',
+                  label: 'Button',
+                  widget: 'object',
+                  fields: [
+                    { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                    { name: 'link', label: 'Link', widget: 'string' }
+                  ]
+                },
+              ]
             }
       # Products Page
       - name: 'products'
@@ -239,59 +227,53 @@ collections:
               name: 'hero',
               label: 'Hero',
               widget: 'object',
-              fields:
-                [
-                  { name: 'title', label: 'Title', widget: 'string' },
-                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
-                  { name: 'content', label: 'content', widget: 'string' },
-                  {
-                    name: 'buttons',
-                    label: 'Buttons',
-                    widget: 'object',
-                    fields:
-                      [
-                        {
-                          name: 'solid',
-                          label: 'Solid',
-                          widget: 'object',
-                          fields:
-                            [
-                              { name: 'text', label: 'Placeholder Text', widget: 'string' },
-                              { name: 'button', label: 'Button Text', widget: 'string' }
-                            ]
-                        },
-                        {
-                          name: 'Outline',
-                          label: 'Outline',
-                          widget: 'object',
-                          fields:
-                            [
-                              { name: 'text', label: 'Placeholder Text', widget: 'string' },
-                              { name: 'button', label: 'Button Text', widget: 'string' }
-                            ]
-                        },
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'content', label: 'content', widget: 'string' },
+                {
+                  name: 'buttons',
+                  label: 'Buttons',
+                  widget: 'object',
+                  fields: [
+                    {
+                      name: 'solid',
+                      label: 'Solid',
+                      widget: 'object',
+                      fields: [
+                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                        { name: 'button', label: 'Button Text', widget: 'string' }
                       ]
-                  },
-                  { name: 'image_link', label: 'Image Link', widget: 'image' },
-                  { name: 'image_alt', label: 'Image Alt Text', widget: 'string' },
-                  {
+                    },
+                    {
+                      name: 'Outline',
+                      label: 'Outline',
+                      widget: 'object',
+                      fields: [
+                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                        { name: 'button', label: 'Button Text', widget: 'string' }
+                      ]
+                    },
+                  ]
+                },
+                { name: 'image_link', label: 'Image Link', widget: 'image' },
+                { name: 'image_alt', label: 'Image Alt Text', widget: 'string' },
+                {
                   name: 'brands',
                   label: 'Brands',
                   widget: 'list',
                   allow_add: false,
-                  fields:
-                    [
-                      { name: 'image_link', label: 'Image Link', widget: 'image' },
-                    ]
+                  fields: [
+                    { name: 'image_link', label: 'Image Link', widget: 'image' },
+                  ]
                 },
-                ]
+              ]
             }
           - {
               name: 'benefits',
               label: 'Benefits',
               widget: 'object',
-              fields:
-                [
+              fields: [
                   { name: 'title', label: 'Title', widget: 'string' },
                   { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
                   {
@@ -312,24 +294,22 @@ collections:
               name: 'offers',
               label: 'offers',
               widget: 'object',
-              fields:
-                [
-                  { name: 'title', label: 'Title', widget: 'string' },
-                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
-                  {
-                    name: 'offer',
-                    label: 'offer',
-                    widget: 'list',
-                    allow_add: false,
-                    fields:
-                      [
-                        { name: 'title', label: 'Title', widget: 'string' },
-                        { name: 'label', label: 'label', widget: 'string' },
-                        { name: 'content', label: 'content', widget: 'string' },
-                        { name: 'image_link', label: 'Image Link', widget: 'image' },
-                      ]
-                  },
-                ]
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                {
+                  name: 'offer',
+                  label: 'offer',
+                  widget: 'list',
+                  allow_add: false,
+                  fields: [
+                    { name: 'title', label: 'Title', widget: 'string' },
+                    { name: 'label', label: 'label', widget: 'string' },
+                    { name: 'content', label: 'content', widget: 'string' },
+                    { name: 'image_link', label: 'Image Link', widget: 'image' },
+                  ]
+                },
+              ]
             }
           - {
               name: 'features',
@@ -356,8 +336,7 @@ collections:
               name: 'call_to_action',
               label: 'Call to Action',
               widget: 'object',
-              fields:
-                [
+              fields: [
                   { name: 'title', label: 'Title', widget: 'string' },
                   { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
                   { name: 'content', label: 'content', widget: 'string' },
@@ -365,13 +344,136 @@ collections:
                     name: 'button',
                     label: 'Button',
                     widget: 'object',
-                    fields:
-                      [
-                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
-                        { name: 'link', label: 'Link', widget: 'string' }
-                      ]
+                    fields: [
+                      { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                      { name: 'link', label: 'Link', widget: 'string' }
+                    ]
                   },
                 ]
+            }
+      # Contact Page
+      - name: 'contact'
+        label: 'Contact'
+        file: 'content/contact/_index.md'
+        fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string', required: false }
+          - { name: 'draft', label: 'Draft', widget: 'boolean', default: true }
+          - {
+              name: 'hero',
+              label: 'Hero',
+              widget: 'object',
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+              ]
+            }
+          - {
+              name: 'contacts',
+              label: 'Contacts',
+              widget: 'object',
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'content', label: 'content', widget: 'string' },
+                {
+                  name: 'form_details',
+                  label: 'Form Details',
+                  widget: 'object',
+                  fields: [
+                    {
+                      name: 'half',
+                      label: 'Half',
+                      widget: 'list',
+                      allow_add: false,
+                      fields: [
+                        { name: 'placeholder', label: 'Placeholder', widget: 'string' },
+                      ]
+                    },
+                    {
+                      name: 'Full',
+                      label: 'Full',
+                      widget: 'list',
+                      allow_add: false,
+                      fields: [
+                        { name: 'placeholder', label: 'Placeholder', widget: 'string' },
+                      ]
+                    },
+                    {
+                      name: 'message',
+                      label: 'Message',
+                      widget: 'list',
+                      allow_add: false,
+                      fields: [
+                        { name: 'placeholder', label: 'Placeholder', widget: 'string' },
+                      ]
+                    },
+                    {
+                      name: 'button',
+                      label: 'Button',
+                      widget: 'object',
+                      fields: [
+                        { name: 'text', label: 'text', widget: 'string' },
+                      ]
+                    },
+                  ]
+                },
+                {
+                  name: 'contact_details',
+                  label: 'Contact Details',
+                  widget: 'list',
+                  allow_add: false,
+                  fields: [
+                    { name: 'title', label: 'Title', widget: 'string' },
+                    { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                    { name: 'content', label: 'content', widget: 'string' },
+                    { name: 'image_link', label: 'Image Link', widget: 'image' },
+                  ]
+                },
+              ]
+            }
+
+
+      # Blog Page
+      - name: 'blog'
+        label: 'Blog'
+        file: 'content/blog/_index.md'
+        fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string', required: false }
+          - { name: 'draft', label: 'Draft', widget: 'boolean', default: true }
+          - {
+              name: 'hero',
+              label: 'Hero',
+              widget: 'object',
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'content', label: 'content', widget: 'string' },
+                {
+                  name: 'featured',
+                  label: 'Buttons',
+                  widget: 'object',
+                  fields: [
+                    { name: 'label', label: 'Label', widget: 'string' },
+                    { name: 'title', label: 'Title', widget: 'string' },
+                    { name: 'content', label: 'Content', widget: 'string' },
+                    { name: 'image', label: 'Image', widget: 'string' },
+                    { name: 'author', label: 'Author', widget: 'string' },
+                    { name: 'date', label: 'Date', widget: 'datetime', default:'', date_format: 'DD.MM.YYYY' },
+                  ]
+                },
+              ]
+            }
+          - {
+              name: 'posts',
+              label: 'Posts',
+              widget: 'object',
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                { name: 'content', label: 'content', widget: 'string' },
+              ]
             }
 
     preview_path: /{{slug}}
