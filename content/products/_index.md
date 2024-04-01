@@ -1,7 +1,6 @@
 ---
 title: 'Products'
 description: "products description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
-date: 2024-01-01T08:00:00-07:00
 draft: false
 
 hero:

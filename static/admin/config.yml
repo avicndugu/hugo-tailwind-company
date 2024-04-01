@@ -28,6 +28,7 @@ collections:
         file: 'content/_index.md'
         fields:
           - { name: 'title', label: 'Title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { name: 'draft', label: 'Draft', widget: 'boolean', default: true }
           - {
               name: 'hero',
@@ -208,6 +209,152 @@ collections:
           - {
               name: 'promotion',
               label: 'promotion',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  { name: 'content', label: 'content', widget: 'string' },
+                  {
+                    name: 'button',
+                    label: 'Button',
+                    widget: 'object',
+                    fields:
+                      [
+                        { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                        { name: 'link', label: 'Link', widget: 'string' }
+                      ]
+                  },
+                ]
+            }
+      # Products Page
+      - name: 'products'
+        label: 'Products'
+        file: 'content/products/_index.md'
+        fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string', required: false }
+          - { name: 'draft', label: 'Draft', widget: 'boolean', default: true }
+          - {
+              name: 'hero',
+              label: 'Hero',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  { name: 'content', label: 'content', widget: 'string' },
+                  {
+                    name: 'buttons',
+                    label: 'Buttons',
+                    widget: 'object',
+                    fields:
+                      [
+                        {
+                          name: 'solid',
+                          label: 'Solid',
+                          widget: 'object',
+                          fields:
+                            [
+                              { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                              { name: 'button', label: 'Button Text', widget: 'string' }
+                            ]
+                        },
+                        {
+                          name: 'Outline',
+                          label: 'Outline',
+                          widget: 'object',
+                          fields:
+                            [
+                              { name: 'text', label: 'Placeholder Text', widget: 'string' },
+                              { name: 'button', label: 'Button Text', widget: 'string' }
+                            ]
+                        },
+                      ]
+                  },
+                  { name: 'image_link', label: 'Image Link', widget: 'image' },
+                  { name: 'image_alt', label: 'Image Alt Text', widget: 'string' },
+                  {
+                  name: 'brands',
+                  label: 'Brands',
+                  widget: 'list',
+                  allow_add: false,
+                  fields:
+                    [
+                      { name: 'image_link', label: 'Image Link', widget: 'image' },
+                    ]
+                },
+                ]
+            }
+          - {
+              name: 'benefits',
+              label: 'Benefits',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  {
+                    name: 'benefit',
+                    label: 'Benefit',
+                    widget: 'list',
+                    allow_add: false,
+                    fields:
+                      [
+                        { name: 'title', label: 'Title', widget: 'string' },
+                        { name: 'content', label: 'content', widget: 'string' },
+                        { name: 'image_link', label: 'Image Link', widget: 'image' },
+                      ]
+                  },
+                ]
+            }
+          - {
+              name: 'offers',
+              label: 'offers',
+              widget: 'object',
+              fields:
+                [
+                  { name: 'title', label: 'Title', widget: 'string' },
+                  { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                  {
+                    name: 'offer',
+                    label: 'offer',
+                    widget: 'list',
+                    allow_add: false,
+                    fields:
+                      [
+                        { name: 'title', label: 'Title', widget: 'string' },
+                        { name: 'label', label: 'label', widget: 'string' },
+                        { name: 'content', label: 'content', widget: 'string' },
+                        { name: 'image_link', label: 'Image Link', widget: 'image' },
+                      ]
+                  },
+                ]
+            }
+          - {
+              name: 'features',
+              label: 'Features',
+              widget: 'object',
+              fields: [
+                { name: 'title', label: 'Title', widget: 'string' },
+                { name: 'enabled', label: 'Enabled', widget: 'boolean', default: true },
+                {
+                  name: 'feature',
+                  label: 'Feature',
+                  widget: 'list',
+                  allow_add: false,
+                  fields:
+                    [
+                      { name: 'title', label: 'Title', widget: 'string' },
+                      { name: 'content', label: 'content', widget: 'string' },
+                      { name: 'image_link', label: 'Image Link', widget: 'image' },
+                    ]
+                },
+              ]
+            }
+          - {
+              name: 'call_to_action',
+              label: 'Call to Action',
               widget: 'object',
               fields:
                 [
