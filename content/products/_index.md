@@ -81,14 +81,4 @@ features:
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
       image_link: "/images/robot-icon.png"
 
-
-
-call_to_action:
-  enabled: true
-  title: "Are you ready to grow your business with us?"
-  content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
-  button:
-    text: "View Pricing"
-    link: "/pricing/"
-
 ---

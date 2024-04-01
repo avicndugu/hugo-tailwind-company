@@ -1,6 +1,7 @@
 ---
 title: "Pricing"
 description: "Pricing description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
+draft: false
 hero:
   enabled: true
   title: "Pricing plans that suit you"
@@ -80,8 +81,4 @@ faqs:
     - title: "Is a credit card required?"
       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
 
-call_to_action:
-  enabled: true
-  title: ""
-  content: ""
 ---
