@@ -101,8 +101,13 @@
                 {{ end }}
                 <div>
                     {{ range .Site.Params.footer.social }}
+                    {{ $image := resources.GetMatch .image }}
+                    {{ $alt := .alt }}
+                    {{ $width := .width }}
                     <a href="{{ .link }}" class="inline-block px-3 pb-4 lg:pb-0">
-                        <img src="{{ .image }}" alt="{{ .alt }}" width="20" height="20">
+                        {{- with $image -}}
+                            <img src="{{ .RelPermalink }}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $width }}">
+                        {{- end -}}
                     </a>
                     {{ end }}
                 </div>

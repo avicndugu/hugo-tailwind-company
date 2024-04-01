@@ -4,8 +4,13 @@ title: "finsweet"
 
 theme: "hugo-tailwind-theme"
 
+services:
+  googleAnalytics:
+    ID: G-MEASUREMENT_ID
+
 imaging:
   quality: 100
+
 
 author:
   name: "Default Author"
@@ -72,19 +77,24 @@ params:
         button: "Subscribe"
     copyright: |
       [Conversion to Tailwind & Hugo by Avic Ndugu](https://avicndugu.com) -|- [Design by Finsweet](https://www.figma.com/community/file/1086672799312430578)
+
     social:
       - image: "/images/LinkedIn.svg"
         alt: "LinkedIn"
         link: "#"
+        width: 20
       - image: "/images/Twitter.svg"
         alt: "Twitter"
         link: "#"
+        width: 20
       - image: "/images/Instagram.svg"
         alt: "Instagram"
         link: "#"
+        width: 20
       - image: "/images/Facebook.svg"
         alt: "Facebook"
         link: "#"
+        width: 20
 
 
 menus:
