@@ -6,7 +6,9 @@
 {{- else -}}
  <meta name="description" content="{{ .Params.Description }}" />
 {{- end }}
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
-{{ template "_internal/google_analytics_async.html" . }}
+{{- partialCached "head/css.html" . -}}
+{{- partialCached "head/js.html" . -}}
+{{- if hugo.IsProduction -}}
+    {{- template "_internal/google_analytics_async.html" . -}}
+{{- end -}}
 
