@@ -4,14 +4,14 @@ CookieConsent.run({
     guiOptions: {
         consentModal: {
             layout: "box",
-            position: "bottom left",
-            equalWeightButtons: true,
+            position: "bottom right",
+            equalWeightButtons: false,
             flipButtons: false
         },
         preferencesModal: {
             layout: "box",
             position: "right",
-            equalWeightButtons: true,
+            equalWeightButtons: false,
             flipButtons: false
         }
     },
@@ -27,7 +27,7 @@ CookieConsent.run({
         translations: {
             en: {
                 consentModal: {
-                    title: "Hello traveller, it's cookie time!",
+                    title: "Website cookies for you!",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
                     acceptAllBtn: "Accept all",
                     acceptNecessaryBtn: "Reject all",
