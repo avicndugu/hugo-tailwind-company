@@ -22,6 +22,7 @@ params:
     alt: "Finsweet"
   default_hero_image:
     image: "/images/team-photo-3.png"
+  cookie_consent: true
   related_posts:
     title: "Read more posts"
   menu_button:
